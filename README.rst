@@ -44,6 +44,9 @@ pip install -U setuptools setuptools_scm wheel
 
 .. _pyscaffold-notes:
 
+
+SETUPTOOLS_SCM_DEBUG=1 python3 setup.py --version
+
 Note
 ====
 

@@ -7,6 +7,7 @@ build-backend = "setuptools.build_meta"
 # For smarter version schemes and other configuration options,
 # check out https://github.com/pypa/setuptools_scm
 version_scheme = "no-guess-dev"
+local_scheme="no-local-version"
 write_to = "src/showme/version.py"
 git_describe_command = "git describe --dirty --tags --long --match v* --first-parent"
 

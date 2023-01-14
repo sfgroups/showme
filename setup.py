@@ -1,13 +1,3 @@
-"""
-    Setup file for showme.
-    Use setup.cfg to configure your project.
-
-    This file was generated with PyScaffold 4.3.1.
-    PyScaffold helps you to put up the scaffold of your new Python project.
-    Learn more under: https://pyscaffold.org/
-"""
-from setuptools import setup
-
 import pathlib
 
 from setuptools import find_packages, setup
@@ -16,14 +6,15 @@ from setuptools import find_packages, setup
 def get_version(rel_path: str):
     file_path = pathlib.Path(__file__).parent.absolute() / rel_path
     for line in file_path.read_text().splitlines():
-        if line.startswith("__version__"):
+        if line.strip().lower().startswith("__version__"):
             return line.split('=')[1]
     raise RuntimeError("Unable to find version string.")
 
 
 if __name__ == "__main__":
+    #print(get_version("src/showme/version.py"))
     try:
-        setup(version=get_version("src/showme/version.py"))
+        setup()
     except:  # noqa
         print(
             "\n\nAn error occurred while building the project, "
