@@ -41,6 +41,8 @@ A longer description of your project goes here...
 
 pip install -U setuptools setuptools_scm wheel
 
+python -m setuptools_scm  --strip-dev
+
 
 .. _pyscaffold-notes:
 
