@@ -1,6 +1,7 @@
 import pathlib
 
 from setuptools import find_packages, setup
+import setuptools_scm
 
 
 def get_version(rel_path: str):
