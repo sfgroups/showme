@@ -3,16 +3,16 @@
 requires = ["setuptools>=46.1.0", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools_scm]
-# For smarter version schemes and other configuration options,
-# check out https://github.com/pypa/setuptools_scm
-version_scheme = "release-branch-semver"
-#version_scheme = "no-guess-dev"
-local_scheme="no-local-version"
-write_to = "src/showme/version.py"
+#[tool.setuptools_scm]
+## For smarter version schemes and other configuration options,
+## check out https://github.com/pypa/setuptools_scm
+#version_scheme = "release-branch-semver"
+##version_scheme = "no-guess-dev"
+#local_scheme="no-local-version"
+#write_to = "src/showme/version.py"
 
-[tool.setuptools.dynamic]
-version = {attr = "showme.__version__"}
+#[tool.setuptools.dynamic]
+#version = {attr = "showme.__version__"}
 
 
 [project]
