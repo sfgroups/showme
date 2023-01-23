@@ -3,7 +3,10 @@ import pathlib
 from setuptools import find_packages, setup
 import setuptools_scm
 
-setup()
+from setuptools_scm import get_version
+
+
+setup(use_scm_version =True)
 
 # def myversion():
 #     from setuptools_scm.version import SEMVER_MINOR, guess_next_simple_semver, release_branch_semver_version
@@ -21,7 +24,8 @@ setup()
 #
 #
 # setup(use_scm_version=myversion)
-#
-# if __name__ == "__main__":
-#     print(myversion())
+
+if __name__ == "__main__":
+    print("ver=" +get_version())
+
 
