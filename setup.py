@@ -2,7 +2,7 @@ import pathlib
 
 from setuptools import find_packages, setup
 import setuptools_scm
-setup()
+setup(use_scm_version=True,)
 
 #
 # def myversion():
