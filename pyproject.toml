@@ -8,8 +8,8 @@ build-backend = "setuptools.build_meta"
 ## check out https://github.com/pypa/setuptools_scm
 #version_scheme = "release-branch-semver"
 #version_scheme = "no-guess-dev"
-#local_scheme="no-local-version"
-local_scheme="dirty-tag"
+local_scheme="no-local-version"
+#local_scheme="dirty-tag"
 #write_to = "src/showme/version.py"
 
 [project]

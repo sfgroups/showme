@@ -33,21 +33,21 @@
 showme
 ======
 
+setuptools commands used::
 
-    Add a short description here!
+ SETUPTOOLS_SCM_DEBUG=1 python3 setup.py --version
 
+ pip install -U setuptools setuptools_scm wheel
 
-A longer description of your project goes here...
+ python -m setuptools_scm  --strip-dev
 
-pip install -U setuptools setuptools_scm wheel
-
-python -m setuptools_scm  --strip-dev
-
-
-.. _pyscaffold-notes:
+ python setup.py --version
 
 
-SETUPTOOLS_SCM_DEBUG=1 python3 setup.py --version
+
+
+
+
 
 Note
 ====
