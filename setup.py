@@ -18,5 +18,5 @@ def app_version_from_scm():
 
 setup(use_scm_version=app_version_from_scm)
 
-if __name__ == "__main__":
-    print(f"version : {app_version_from_scm()}")
+# if __name__ == "__main__":
+#     print(f"version : {app_version_from_scm()}")
